@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VComponents.all;
 
-entity user_logic2 is
+entity user_logic is
  PORT (
     ck : IN STD_LOGIC;
     resetn : IN STD_LOGIC;
@@ -16,7 +16,7 @@ entity user_logic2 is
   );
 end user_logic2;
  
- architecture Behavioral of user_logic2 is
+ architecture Behavioral of user_logic is
 COMPONENT cordic_0
   PORT (
     aclk : IN STD_LOGIC;
