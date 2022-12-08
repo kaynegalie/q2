@@ -20,6 +20,7 @@ end user_logic2;
 COMPONENT cordic_0
   PORT (
     aclk : IN STD_LOGIC;
+    aresetn : IN STD_LOGIC;
     s_axis_cartesian_tvalid : IN STD_LOGIC;
     s_axis_cartesian_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     s_axis_phase_tvalid : IN STD_LOGIC;
@@ -32,6 +33,7 @@ begin
 U : cordic_0
   PORT MAP (
     aclk => ck,
+    aresetn => resetn,
     s_axis_cartesian_tvalid => i_tvalid,
     s_axis_cartesian_tdata => yx_in,
     s_axis_phase_tvalid => i_tvalid,
